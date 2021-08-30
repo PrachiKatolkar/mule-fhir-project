@@ -29,10 +29,21 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+				<cloudHubDeployment>
+				<username>prachikatolkar99</username>
+				<environment>Sandbox</environment>
+				<workers>1</workers>
+				<workerType>Micro</workerType>
+				<applicationName>fhirHealthcareProject</applicationName>
+                <password>Prachi@1999</password>
+                <muleVersion>4.3.0</muleVersion>
+                <objectStoreV2>true</objectStoreV2>
+				</cloudHubDeployment>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
-	
 
 	<dependencies>
 		<dependency>
