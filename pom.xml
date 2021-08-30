@@ -71,7 +71,7 @@
 			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
-
+  
 	<repositories>
 		<repository>
 			<id>anypoint-exchange-v2</id>
@@ -86,8 +86,7 @@
 			<layout>default</layout>
 		</repository>
      </repositories>
-
-
+     
 	<pluginRepositories>
 		<pluginRepository>
 			<id>mulesoft-releases</id>
@@ -99,5 +98,6 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+
 
 </project>
