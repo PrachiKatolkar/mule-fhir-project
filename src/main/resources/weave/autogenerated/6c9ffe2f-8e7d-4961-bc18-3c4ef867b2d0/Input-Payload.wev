@@ -1,0 +1,1281 @@
+%dw 2.0
+
+type auto_6c9ffe2f_8e7d_4961_bc18_3c4ef867b2d0_Input_Payload = {
+  "us-core-ethinicity"?: {
+    extension?: Array<{      extension?: Array<{        extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+        id?: String, 
+        _?: Any
+      }> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+      id?: String, 
+      value?: Any, 
+      url: String, 
+      _?: Any
+    } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+    detailed?: Array<{      extension?: Array<{        extension?: Array<anonymousType_4> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+        id?: String, 
+        value?: {
+          valueInteger: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDecimal: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDateTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDate: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueInstant: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueString: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUri: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBoolean: Boolean, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCode: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBase64Binary: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCoding: {
+            extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+            system?: String, 
+            code?: String, 
+            userSelected?: Boolean, 
+            display?: String, 
+            id?: String, 
+            version?: String, 
+            _?: Any
+          } {"description": "A Coding is a representation of a defined concept using a symbol from a defined \"code system\".\nSee http://hl7.org/fhir/STU3/terminologies.html for more details.\n"}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCodeableConcept: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAttachment: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueIdentifier: {
+            period?: anonymousType_4, 
+            system?: String, 
+            use?: "secondary" | "temp" | "usual" | "old" | "official", 
+            assigner?: anonymousType_4, 
+            "type"?: anonymousType_4, 
+            value?: String, 
+            _?: Any
+          } {"description": "Value of extension."}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueQuantity: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRange: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePeriod: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRatio: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueHumanName: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAddress: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactPoint: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueReference: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCanonical: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueId: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMarkdown: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueOid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePositiveInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUnsignedInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUrl: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUuid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAge: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAnnotation: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCount: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDistance: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDuration: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMoney: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSampledData: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSignature: {
+            data?: String, 
+            onBehalfOf?: anonymousType_4, 
+            sigFormat?: String, 
+            targetFormat?: String, 
+            "type": Array<anonymousType_50> {"description": "Indication of the reason the entity signed the object(s)"}, 
+            when: String, 
+            who?: anonymousType_4, 
+            _?: Any
+          } {"description": "Value of Extension"}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTiming: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactDetail: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContributor: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDataRequirement: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueExpression: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueParameterDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRelatedArtifact: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTriggerDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUsageContext: {
+            extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+            code: {
+              extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+              system?: String, 
+              code?: String, 
+              userSelected?: Boolean, 
+              display?: String, 
+              id?: String, 
+              version?: String, 
+              _?: Any
+            } {"description": "Type of context being specified"}, 
+            id?: String, 
+            value: {
+              valueCodeableConcept: anonymousType_4, 
+              _?: Any
+            } {"description": "Value that defines the context"} | {
+              valueQuantity: anonymousType_4, 
+              _?: Any
+            } {"description": "Value that defines the context"} | {
+              valueRange: anonymousType_4, 
+              _?: Any
+            } {"description": "Value that defines the context"} | {
+              valueReference: anonymousType_4, 
+              _?: Any
+            } {"description": "Value that defines the context"}, 
+            _?: Any
+          } {"description": "Describes the context of use for a conformance or knowledge resource Elements defined in Ancestors id, extension"}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDosage: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMeta: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"}, 
+        url: String, 
+        _?: Any
+      } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+      id?: String, 
+      value: {
+        extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+        system?: String, 
+        code?: String, 
+        userSelected?: Boolean, 
+        display?: String, 
+        id?: String, 
+        version?: String, 
+        _?: Any
+      } {"description": "A Coding is a representation of a defined concept using a symbol from a defined \"code system\".\nSee http://hl7.org/fhir/STU3/terminologies.html for more details.\n"}, 
+      url: String, 
+      _?: Any
+    } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}>, 
+    id?: String, 
+    text?: {
+      extension?: Array<{        extension?: Array<anonymousType_4> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+        id?: String, 
+        value?: {
+          valueInteger: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDecimal: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDateTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDate: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueInstant: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueString: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUri: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBoolean: Boolean, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCode: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBase64Binary: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCoding: anonymousType_50, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCodeableConcept: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAttachment: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueIdentifier: {
+            period?: anonymousType_4, 
+            system?: String, 
+            use?: "secondary" | "temp" | "usual" | "old" | "official", 
+            assigner?: anonymousType_4, 
+            "type"?: anonymousType_4, 
+            value?: String, 
+            _?: Any
+          } {"description": "Value of extension."}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueQuantity: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRange: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePeriod: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRatio: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueHumanName: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAddress: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactPoint: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueReference: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCanonical: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueId: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMarkdown: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueOid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePositiveInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUnsignedInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUrl: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUuid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAge: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAnnotation: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCount: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDistance: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDuration: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMoney: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSampledData: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSignature: {
+            data?: String, 
+            onBehalfOf?: anonymousType_4, 
+            sigFormat?: String, 
+            targetFormat?: String, 
+            "type": Array<anonymousType_50> {"description": "Indication of the reason the entity signed the object(s)"}, 
+            when: String, 
+            who?: anonymousType_4, 
+            _?: Any
+          } {"description": "Value of Extension"}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTiming: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactDetail: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContributor: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDataRequirement: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueExpression: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueParameterDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRelatedArtifact: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTriggerDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUsageContext: anonymousType_154, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDosage: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMeta: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"}, 
+        url: String, 
+        _?: Any
+      } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+      id?: String, 
+      value: {
+        extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+        system?: String, 
+        code?: String, 
+        userSelected?: Boolean, 
+        display?: String, 
+        id?: String, 
+        version?: String, 
+        _?: Any
+      } {"description": "A Coding is a representation of a defined concept using a symbol from a defined \"code system\".\nSee http://hl7.org/fhir/STU3/terminologies.html for more details.\n"}, 
+      url: String, 
+      _?: Any
+    } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}, 
+    ombCategory?: Array<{      extension?: Array<{        extension?: Array<anonymousType_4> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+        id?: String, 
+        value?: {
+          valueInteger: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDecimal: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDateTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDate: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueInstant: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueString: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUri: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBoolean: Boolean, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCode: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBase64Binary: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCoding: anonymousType_50, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCodeableConcept: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAttachment: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueIdentifier: {
+            period?: anonymousType_4, 
+            system?: String, 
+            use?: "secondary" | "temp" | "usual" | "old" | "official", 
+            assigner?: anonymousType_4, 
+            "type"?: anonymousType_4, 
+            value?: String, 
+            _?: Any
+          } {"description": "Value of extension."}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueQuantity: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRange: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePeriod: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRatio: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueHumanName: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAddress: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactPoint: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueReference: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCanonical: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueId: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMarkdown: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueOid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePositiveInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUnsignedInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUrl: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUuid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAge: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAnnotation: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCount: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDistance: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDuration: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMoney: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSampledData: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSignature: {
+            data?: String, 
+            onBehalfOf?: anonymousType_4, 
+            sigFormat?: String, 
+            targetFormat?: String, 
+            "type": Array<anonymousType_50> {"description": "Indication of the reason the entity signed the object(s)"}, 
+            when: String, 
+            who?: anonymousType_4, 
+            _?: Any
+          } {"description": "Value of Extension"}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTiming: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactDetail: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContributor: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDataRequirement: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueExpression: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueParameterDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRelatedArtifact: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTriggerDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUsageContext: anonymousType_154, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDosage: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMeta: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"}, 
+        url: String, 
+        _?: Any
+      } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+      id?: String, 
+      value: {
+        extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+        system?: String, 
+        code?: String, 
+        userSelected?: Boolean, 
+        display?: String, 
+        id?: String, 
+        version?: String, 
+        _?: Any
+      } {"description": "A Coding is a representation of a defined concept using a symbol from a defined \"code system\".\nSee http://hl7.org/fhir/STU3/terminologies.html for more details.\n"}, 
+      url: String, 
+      _?: Any
+    } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}>, 
+    url: String, 
+    _?: Any
+  } {"description": "US Core ethnicity Extension URL http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"}, 
+  extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations"}, 
+  deceased?: {
+    deceasedBoolean: Boolean, 
+    _?: Any
+  } {"description": "Indicates if the individual is deceased or not"} | {
+    deceasedDateTime: String, 
+    _?: Any
+  } {"description": "Indicates if the individual is deceased or not"}, 
+  gender: "other" | "female" | "male" | "unknown", 
+  "us-core-birthsex"?: "UNK" | "F" | "M", 
+  modifierExtension?: Array<anonymousType_4> {"description": "Extensions that cannot be ignored"}, 
+  link?: Array<anonymousType_4> {"description": "Link to another patient resource that concerns the same actual person"}, 
+  language?: String, 
+  contact?: Array<anonymousType_4> {"description": "A contact party (e.g. guardian, partner, friend) for the patient SHALL at least contain a contact's details or a reference to an organization"}, 
+  generalPractitioner?: Array<anonymousType_4> {"description": "Patient's nominated primary care provider"}, 
+  telecom?: Array<anonymousType_4> {"description": "A contact detail for the individual"}, 
+  id?: String, 
+  text?: {
+    div: String, 
+    status: "extensions" | "generated" | "additional" | "empty", 
+    _?: Any
+  } {"description": "Text summary of the resource, for human interpretation"}, 
+  communication?: Array<anonymousType_4> {"description": "A list of Languages which may be used to communicate with the patient about his or her health"}, 
+  identifier?: Array<{    period?: anonymousType_4,     system?: String,     use?: "secondary" | "temp" | "usual" | "old" | "official",     assigner?: anonymousType_4,     "type"?: anonymousType_4,     value?: String,     _?: Any  } {"description": "A numeric or alphanumeric string that is associated with a single object or entity within a given system.\nTypically, identifiers are used to connect content in resources to external content available in other frameworks or protocols.\nIdentifiers are associated with objects, and may be changed or retired due to human or system process and errors.\n"}> {"description": "An identifier for this patient"}, 
+  address?: Array<anonymousType_4> {"description": "Addresses for the individual"}, 
+  active?: Boolean, 
+  photo?: Array<anonymousType_4> {"description": "Image of the patient"}, 
+  birthDate?: String, 
+  "us-core-race"?: {
+    extension?: Array<{      extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+      id?: String, 
+      value?: Any, 
+      url: String, 
+      _?: Any
+    } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+    detailed?: Array<{      valueCoding: {        extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+        system?: String, 
+        code?: String, 
+        userSelected?: Boolean, 
+        display?: String, 
+        id?: String, 
+        version?: String, 
+        _?: Any
+      } {"description": "A Coding is a representation of a defined concept using a symbol from a defined \"code system\".\nSee http://hl7.org/fhir/STU3/terminologies.html for more details.\n"}, 
+      extension?: Array<{        extension?: Array<anonymousType_4> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+        id?: String, 
+        value?: {
+          valueInteger: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDecimal: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDateTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDate: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueInstant: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueString: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUri: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBoolean: Boolean, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCode: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBase64Binary: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCoding: anonymousType_50, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCodeableConcept: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAttachment: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueIdentifier: {
+            period?: anonymousType_4, 
+            system?: String, 
+            use?: "secondary" | "temp" | "usual" | "old" | "official", 
+            assigner?: anonymousType_4, 
+            "type"?: anonymousType_4, 
+            value?: String, 
+            _?: Any
+          } {"description": "Value of extension."}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueQuantity: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRange: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePeriod: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRatio: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueHumanName: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAddress: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactPoint: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueReference: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCanonical: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueId: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMarkdown: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueOid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePositiveInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUnsignedInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUrl: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUuid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAge: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAnnotation: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCount: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDistance: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDuration: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMoney: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSampledData: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSignature: {
+            data?: String, 
+            onBehalfOf?: anonymousType_4, 
+            sigFormat?: String, 
+            targetFormat?: String, 
+            "type": Array<anonymousType_50> {"description": "Indication of the reason the entity signed the object(s)"}, 
+            when: String, 
+            who?: anonymousType_4, 
+            _?: Any
+          } {"description": "Value of Extension"}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTiming: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactDetail: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContributor: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDataRequirement: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueExpression: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueParameterDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRelatedArtifact: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTriggerDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUsageContext: anonymousType_154, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDosage: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMeta: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"}, 
+        url: String, 
+        _?: Any
+      } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+      id?: String, 
+      value?: Any, 
+      url: String, 
+      _?: Any
+    } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}>, 
+    id?: String, 
+    text?: {
+      valueCoding: {
+        extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+        system?: String, 
+        code?: String, 
+        userSelected?: Boolean, 
+        display?: String, 
+        id?: String, 
+        version?: String, 
+        _?: Any
+      } {"description": "A Coding is a representation of a defined concept using a symbol from a defined \"code system\".\nSee http://hl7.org/fhir/STU3/terminologies.html for more details.\n"}, 
+      extension?: Array<{        extension?: Array<anonymousType_4> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+        id?: String, 
+        value?: {
+          valueInteger: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDecimal: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDateTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDate: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueInstant: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueString: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUri: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBoolean: Boolean, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCode: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBase64Binary: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCoding: anonymousType_50, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCodeableConcept: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAttachment: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueIdentifier: {
+            period?: anonymousType_4, 
+            system?: String, 
+            use?: "secondary" | "temp" | "usual" | "old" | "official", 
+            assigner?: anonymousType_4, 
+            "type"?: anonymousType_4, 
+            value?: String, 
+            _?: Any
+          } {"description": "Value of extension."}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueQuantity: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRange: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePeriod: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRatio: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueHumanName: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAddress: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactPoint: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueReference: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCanonical: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueId: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMarkdown: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueOid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePositiveInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUnsignedInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUrl: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUuid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAge: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAnnotation: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCount: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDistance: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDuration: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMoney: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSampledData: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSignature: {
+            data?: String, 
+            onBehalfOf?: anonymousType_4, 
+            sigFormat?: String, 
+            targetFormat?: String, 
+            "type": Array<anonymousType_50> {"description": "Indication of the reason the entity signed the object(s)"}, 
+            when: String, 
+            who?: anonymousType_4, 
+            _?: Any
+          } {"description": "Value of Extension"}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTiming: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactDetail: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContributor: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDataRequirement: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueExpression: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueParameterDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRelatedArtifact: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTriggerDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUsageContext: anonymousType_154, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDosage: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMeta: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"}, 
+        url: String, 
+        _?: Any
+      } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+      id?: String, 
+      value?: Any, 
+      url: String, 
+      _?: Any
+    } {"description": "Race Text"}, 
+    ombCategory?: Array<{      valueCoding: {        extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+        system?: String, 
+        code?: String, 
+        userSelected?: Boolean, 
+        display?: String, 
+        id?: String, 
+        version?: String, 
+        _?: Any
+      } {"description": "A Coding is a representation of a defined concept using a symbol from a defined \"code system\".\nSee http://hl7.org/fhir/STU3/terminologies.html for more details.\n"}, 
+      extension?: Array<{        extension?: Array<anonymousType_4> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+        id?: String, 
+        value?: {
+          valueInteger: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDecimal: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDateTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDate: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueInstant: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueString: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUri: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBoolean: Boolean, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCode: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueBase64Binary: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCoding: anonymousType_50, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCodeableConcept: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAttachment: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueIdentifier: {
+            period?: anonymousType_4, 
+            system?: String, 
+            use?: "secondary" | "temp" | "usual" | "old" | "official", 
+            assigner?: anonymousType_4, 
+            "type"?: anonymousType_4, 
+            value?: String, 
+            _?: Any
+          } {"description": "Value of extension."}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueQuantity: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRange: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePeriod: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRatio: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueHumanName: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAddress: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactPoint: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueReference: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCanonical: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueId: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMarkdown: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueOid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valuePositiveInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTime: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUnsignedInt: Number, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUrl: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUuid: String, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAge: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueAnnotation: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueCount: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDistance: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDuration: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMoney: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSampledData: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueSignature: {
+            data?: String, 
+            onBehalfOf?: anonymousType_4, 
+            sigFormat?: String, 
+            targetFormat?: String, 
+            "type": Array<anonymousType_50> {"description": "Indication of the reason the entity signed the object(s)"}, 
+            when: String, 
+            who?: anonymousType_4, 
+            _?: Any
+          } {"description": "Value of Extension"}, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTiming: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContactDetail: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueContributor: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDataRequirement: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueExpression: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueParameterDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueRelatedArtifact: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueTriggerDefinition: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueUsageContext: anonymousType_154, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueDosage: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"} | {
+          valueMeta: anonymousType_4, 
+          _?: Any
+        } {"description": "Value of extension"}, 
+        url: String, 
+        _?: Any
+      } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}> {"description": "Additional content defined by implementations Slice Unordered, Open by value:url"}, 
+      id?: String, 
+      value?: Any, 
+      url: String, 
+      _?: Any
+    } {"description": "Optional Extensions Element + Rule Must have either extensions or value[x], not both Elements defined in Ancestors id, extension\n"}>, 
+    _?: Any
+  } {"description": "US Core Race Extension"}, 
+  multipleBirth?: {
+    multipleBirthBoolean: Boolean, 
+    _?: Any
+  } {"description": "Whether patient is part of a multiple birth"} | {
+    multipleBirthInteger: Number, 
+    _?: Any
+  } {"description": "Whether patient is part of a multiple birth"}, 
+  contained?: Array<{    meta?: anonymousType_4,     implicitRules?: String,     language?: String,     id?: String,     _?: Any  } {"description": "Base Resource"}> {"description": "Contained, inline Resources"}, 
+  managingOrganization?: anonymousType_4, 
+  meta?: anonymousType_4, 
+  name?: Array<anonymousType_4> {"description": "A name associated with the patient"}, 
+  implicitRules?: String, 
+  maritalStatus?: anonymousType_4, 
+  _?: Any
+} {"description": "A resource with narrative, extensions, and contained resources\n+ If the resource is contained in another resource, it SHALL NOT contain nested Resources\n+ If the resource is contained in another resource, it SHALL NOT contain any narrative\n+ If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated\n+ If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource\n"}
+type anonymousType_50 = {
+  extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+  system?: String, 
+  code?: String, 
+  userSelected?: Boolean, 
+  display?: String, 
+  id?: String, 
+  version?: String, 
+  _?: Any
+} {"description": "A Coding is a representation of a defined concept using a symbol from a defined \"code system\".\nSee http://hl7.org/fhir/STU3/terminologies.html for more details.\n"}
+type anonymousType_4 = {
+  extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+  id?: String, 
+  _?: Any
+}
+
+
+
+
+type anonymousType_154 = {
+  extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+  code: {
+    extension?: Array<anonymousType_4> {"description": "Additional Content defined by implementations - from Element: extension (recursive)\n"}, 
+    system?: String, 
+    code?: String, 
+    userSelected?: Boolean, 
+    display?: String, 
+    id?: String, 
+    version?: String, 
+    _?: Any
+  } {"description": "Type of context being specified"}, 
+  id?: String, 
+  value: {
+    valueCodeableConcept: anonymousType_4, 
+    _?: Any
+  } {"description": "Value that defines the context"} | {
+    valueQuantity: anonymousType_4, 
+    _?: Any
+  } {"description": "Value that defines the context"} | {
+    valueRange: anonymousType_4, 
+    _?: Any
+  } {"description": "Value that defines the context"} | {
+    valueReference: anonymousType_4, 
+    _?: Any
+  } {"description": "Value that defines the context"}, 
+  _?: Any
+} {"description": "Describes the context of use for a conformance or knowledge resource Elements defined in Ancestors id, extension"}
+
+
+

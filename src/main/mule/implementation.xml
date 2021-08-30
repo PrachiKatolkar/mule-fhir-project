@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="getPatientID" doc:id="09f757b2-9b12-412f-bad3-08aee1f0478b" >
+		<salesforce:query doc:name="getPatient" doc:id="6e005073-96be-42d4-a686-799a259a6ab3" config-ref="SalesforceHealthCloud_Config">
+			<salesforce:salesforce-query ><![CDATA[SELECT Name FROM Account WHERE PID__c = ':id']]></salesforce:salesforce-query>
+			<salesforce:parameters ><![CDATA[#[output application/java
+---
+{
+	id : attributes.uriParams.id
+}]]]></salesforce:parameters>
+		</salesforce:query>
+		<ee:transform doc:name="Payload" doc:id="db8a01f1-0c1e-41df-9b9e-70edec6f47ed" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	Name: payload.Name
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="createOrUpdatePatients" doc:id="6c9ffe2f-8e7d-4961-bc18-3c4ef867b2d0" >
+		<ee:transform doc:name="Transform Message" doc:id="56281c5b-a2f5-4afa-84ce-aa2e6d9423b7" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+[{
+	PID__c: payload.id,
+	Name: payload.name[0].use,
+    Phone: payload.telecom[1].value,
+    Type: payload.telecom[1].use
+}]]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<salesforce:upsert doc:name="Upsert" doc:id="10902648-01f5-43b7-b31c-8768ea724788" config-ref="SalesforceHealthCloud_Config" objectType="Account" externalIdFieldName="PID__c"/>
+		<ee:transform doc:name="Transform Message" doc:id="d72f433f-6e34-47fb-a880-2455f05b4c5d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
