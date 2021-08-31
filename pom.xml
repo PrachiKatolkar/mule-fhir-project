@@ -39,6 +39,10 @@
                 <password>Prachi@1999</password>
                 <muleVersion>4.3.0</muleVersion>
                 <objectStoreV2>true</objectStoreV2>
+                <properties>
+                <anypoint.platform.client_id>b3abd51cf7554d788b097b17e16caa74</anypoint.platform.client_id>
+                <anypoint.platform.client_secret>EF6Be768dC584FE89E43b6777B6B19aE</anypoint.platform.client_secret>
+                </properties>
 				</cloudHubDeployment>
 				</configuration>
 			</plugin>
