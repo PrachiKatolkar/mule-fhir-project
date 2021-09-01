@@ -13,9 +13,10 @@ pipeline
    bat 'mvn package deploy -DmuleDeploy'
   }
  }
+ 
   stage('Perform Regression Testing'){
   steps{
-  bat'newman run C:\newman\mulehealthcareproject.postman_collection.json --disable-unicode'
+  bat'newman run C:\\newman\\mulehealthcareproject.postman_collection.json --disable-unicode'
   }
   
   }
