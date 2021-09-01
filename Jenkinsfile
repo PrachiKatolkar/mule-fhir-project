@@ -16,7 +16,7 @@ pipeline
  
   stage('Perform Regression Testing'){
   steps{
-  bat'newman run C:\\newman\\mulehealthcareproject.postman_collection.json --disable-unicode'
+  bat'C:\\Users\\pkatolka\\AppData\\Roaming\\npm newman run C:\\newman\\mulehealthcareproject.postman_collection.json --disable-unicode'
   }
   
   }
