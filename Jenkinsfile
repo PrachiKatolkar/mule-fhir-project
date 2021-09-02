@@ -8,6 +8,12 @@ pipeline
   }
   }
   
+ stage('SonarQube Testing'){
+ steps{
+ bat 'mvn sonar:sonar -Dsonar.sources=src/ -Dsonar.host.url=http://localhost:9000 -Dsonar.login=0df219b9363898bb5517ef7af3f5e21553b71405'
+ }
+ }
+  
    stage('Deploy Application to Mulesoft Cloudhub'){
    steps{
    bat 'mvn package deploy -DmuleDeploy'
